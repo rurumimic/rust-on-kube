@@ -49,3 +49,17 @@ ingressroute.traefik.io/dashboard created
 
 Open: [http://traefik.localhost/dashboard/#/](http://traefik.localhost/dashboard/#/)
 
+---
+
+## IngreeRoute
+
+- traefik: [Traefik & Kubernetes](https://doc.traefik.io/traefik/providers/kubernetes-crd/)
+
+```bash
+# Install Traefik Resource Definitions:
+kubectl apply -f https://raw.githubusercontent.com/traefik/traefik/v3.1/docs/content/reference/dynamic-configuration/kubernetes-crd-definition-v1.yml
+
+# Install RBAC for Traefik:
+kubectl apply -f https://raw.githubusercontent.com/traefik/traefik/v3.1/docs/content/reference/dynamic-configuration/kubernetes-crd-rbac.yml
+```
+
