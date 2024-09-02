@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: rurumimic/rust-on-kube/backend
-  pullPolicy: Never
+  repository: localhost:5000/rurumimic/rust-on-kube/backend
+  pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
 
